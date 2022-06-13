@@ -20,12 +20,12 @@ id="comment-{{ $comment->id }}"
                 @endadmin
 
                 @if ($comment->is_status_update)
-                    <h4 class="text-xl font-semibold mb-3">
+                    <h4 class="text-xl font-semibold mb-3" style="color: black;">
                         Status Changed to "{{ $comment->status->name }}"
                     </h4>
                 @endif
 
-                <div class="mt-4 md:mt-0">
+                <div class="mt-4 md:mt-0" style="color: black;">
                     {{ $comment->body }}
                 </div>
             </div>
@@ -44,7 +44,7 @@ id="comment-{{ $comment->id }}"
                 @auth
                 <div
                     class="text-gray-900 flex items-center space-x-2"
-                    x-data="{ isOpen: false }"
+                    x-data="{ isOpen: false }" style="color: black;"
                 >
                     <div class="relative">
                         <button
